@@ -4,6 +4,8 @@ ResumeLens is a web-based platform designed to help candidates evaluate how well
 
 Built with Flask, Google Gemini API, and Tailwind UI, the platform provides real-time skill extraction, match scoring, gap analysis, job recommendations, and AI-generated cover letters.
 
+![Home](images/home.png)
+
 ## Features
 
 ### For Candidates
@@ -41,7 +43,34 @@ Built with Flask, Google Gemini API, and Tailwind UI, the platform provides real
 
 Open a terminal or command prompt and run:
 
-```bash
 pip install Flask matplotlib PyPDF2 python-dotenv requests
 
-### 1. Install Dependencies Globally
+### 2. Add Environment Variables
+
+Create a .env file in the project root and add your Gemini API key:
+
+GOOGLE_API_KEY="your_gemini_api_key_here"
+
+### 3. Run the Flask Server
+
+Navigate to the project directory and run:
+
+python app.py
+
+## Notes
+
+Running without a virtual environment installs packages globally; conflicts with other Python projects are possible.
+
+Ensure python and pip point to the correct Python version (python --version).
+
+### Home
+![Home](images/home.png)
+![Service](images/service.png)
+
+### Candidate Dashboard
+![Candidate Dashboard](images/candidate.png)
+![CV Analysis](images/cv.png)
+
+### Recruiter Dashboard
+![Recruiter Dashboard](images/recruiter.png)
+![Diagram](images/diagram.png)
